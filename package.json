@@ -13,7 +13,7 @@
     "preview": "vite preview",
     "server": "json-server --watch ./db.json --port 3001",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
@@ -38,6 +38,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "json-server": "^1.0.0-beta.3",
     "json-server-auth": "^2.1.0",
