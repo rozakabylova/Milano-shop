@@ -1,18 +1,32 @@
+
 .registerContainer {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   font-family: 'Arial', sans-serif;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+}
+
+.registerContainer:hover {
+  transform: translateY(-10px);
 }
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #2d2d2d;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .form {
@@ -21,39 +35,124 @@
 }
 
 .formGroup {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 label {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.1rem;
+  color: #777;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 input {
-  padding: 10px;
+  padding: 15px;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+  margin-top: 5px;
 }
 
 input:focus {
   border-color: #e91e63;
   outline: none;
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
 }
 
 .submitButton {
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 1.2rem;
-  background-color: #e91e63;
+  background-color: #561541;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .submitButton:hover {
-  background-color: #c2185b;
+  background-color: #71466e;
+  transform: scale(1.05);
+}
+
+.submitButton:active {
+  transform: scale(1);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .registerContainer {
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .formGroup {
+    margin-bottom: 15px;
+  }
+
+  input {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .registerContainer {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 13px;
+  }
+
+  .submitButton {
+    font-size: 1.1rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registerContainer {
+  animation: fadeInUp 1s ease-out;
 }

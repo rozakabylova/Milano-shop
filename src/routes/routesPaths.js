@@ -6,4 +6,9 @@ export const ROUTER_PATHS = {
   cart: '/cart',
   checkout: '/checkout',
   registration: '/registration',
+  login: '/login',
+  about_brand: '/about',
+  contacts_page: '/contacts',
+  contact_form: '/contactsPage',
+  profile: '/profile',
 }

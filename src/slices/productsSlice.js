@@ -4,12 +4,12 @@ import axios from 'axios'
 export const getProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
-    const response = await axios.get('http://localhost:8080/products')
+    const response = await axios.get('http://localhost:3001/products')
     return response.data
   },
 )
 
-const productsSlice = createSlice({
+export const productsSlice = createSlice({
   name: 'products',
   initialState: {
     products: [],

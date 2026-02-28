@@ -7,7 +7,7 @@ export const FashionSection = () => {
     <div className={styles.section}>
       <div className={styles.imageWrapper}>
         <img
-          src="https://www.chanel.com/puls-img/c_limit,w_2400/q_auto:good,dpr_auto,f_auto/1742562117322-homepagecorpoonedesktopjpg_3240x5760.jpg"
+          src="https://www.marko-shoes.ru/blog_images/feshion/Trendovye%20sumki%20vesna-leto%202025/3.png "
           alt="Fashion Campaign"
         />
         <div className={styles.textWrapper}>

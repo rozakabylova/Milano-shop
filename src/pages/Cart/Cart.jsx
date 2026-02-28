@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-import './Cart.module.scss'
+import './Cart.scss'
 import {
   decreaseQuantity,
   increaseQuantity,
@@ -83,6 +84,8 @@ export const Cart = () => {
       <div className="cart-summary">
         <h3>Total: ${totalAmount.toFixed(2)}</h3>
       </div>
+
+      <Link to={'/checkout'}>Перейти к оформлению заказа</Link>
     </div>
   )
 }

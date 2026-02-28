@@ -9,7 +9,7 @@ export const PopularProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/products')
+        const response = await fetch('http://localhost:3001/products')
 
         if (!response.ok) {
           throw new Error(`Ошибка HTTP: ${response.status}`)
@@ -27,32 +27,34 @@ export const PopularProducts = () => {
   }, [])
 
   const popularProducts = products.filter(
-    (product) => product.category === 'popular',
+    (product) => product.category === 'new',
   )
 
   return (
     <div className={styles.popularProducts}>
       <h2 className={styles.popularProductsTitle}>Новая коллекция</h2>
-      {error && <p>Ошибка: {error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
       <ul className={styles.productContainer}>
         {popularProducts.map((product) => (
           <li
             className={styles.product}
             key={product.id}
           >
-            <img
-              className={styles.productImage}
-              src={product.image}
-              alt={product.title}
-            />
-            <div className={styles.productText}>
-              <h3 className={styles.subTitle}>{product.title}</h3>
-              <p>{product.description}</p>
-              <p>Цена: ${product.price}</p>
-              <p>
-                Рейтинг: {product.rating?.rate} ({product.rating?.count}{' '}
-                отзывов)
-              </p>
+            <div className={styles.productCard}>
+              <img
+                className={styles.productImage}
+                src={product.image}
+                alt={product.title}
+              />
+              <div className={styles.productText}>
+                <h3 className={styles.subTitle}>{product.title}</h3>
+                <p className={styles.description}>{product.description}</p>
+                <p className={styles.price}>Цена: ${product.price}</p>
+                <p className={styles.rating}>
+                  Рейтинг: {product.rating?.rate} ({product.rating?.count}{' '}
+                  отзывов)
+                </p>
+              </div>
             </div>
           </li>
         ))}

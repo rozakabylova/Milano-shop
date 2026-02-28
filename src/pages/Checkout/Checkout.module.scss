@@ -1,142 +1,175 @@
-.checkout-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+.checkoutContainer {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+
+.checkoutTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #212529;
+}
+
+.checkoutCart {
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+
+  h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .checkoutItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
 }
 
-.checkout-title {
-  text-align: center;
-  font-size: 24px;
-}
-
-.checkout-cart {
-  margin-bottom: 20px;
-}
-
-.checkout-item {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.checkout-total {
-  font-size: 18px;
+.checkoutTotal {
   font-weight: bold;
+  font-size: 22px;
+  color: #555;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  }
+}
+
+.paymentMethods {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.checkoutButton {
+  background-color: #000; 
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #333; 
+  }
+}
+
+.orderConfirmation {
   text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.orderConfirmation h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.orderConfirmation p {
+  font-size: 18px;
+  color: #555;
   margin-bottom: 20px;
 }
 
-.checkout-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.checkout-button {
-  width: 100%;
-  padding: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.checkout-button:hover {
-  background: #0056b3;
-}
-
-.checkout-back {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
+.checkoutBack {
+  display: inline-block; 
+  font-size: 16px;
   color: #007bff;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #007bff;
+    color: white;
+  }
 }
 
-.checkout-back:hover {
-  text-decoration: underline;
+
+.orderConfirmation {
+  background: #d4edda;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+  h3 {
+    color: #28a745;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .checkoutBack {
+    color: #007bff;
+  }
 }
 
-/* Checkout.module.scss */
-
-/* Основные стили для оформления страницы */
-// .checkoutContainer {
-//   max-width: 800px;
-//   margin: 0 auto;
-//   padding: 20px;
-//   background-color: #f9f9f9;
-//   border-radius: 8px;
-// }
-
-// .checkoutContainer h2 {
-//   text-align: center;
-//   font-size: 2rem;
-//   margin-bottom: 20px;
-// }
-
-// .checkoutContainer h3 {
-//   font-size: 1.5rem;
-//   margin-top: 20px;
-//   margin-bottom: 10px;
-// }
-
-// .checkoutContainer p {
-//   font-size: 1.1rem;
-//   color: #333;
-// }
-
-// /* Стиль для блока с товарами в корзине */
-// .cartItems {
-//   margin-bottom: 20px;
-// }
-
-// .cartItem {
-//   padding: 10px;
-//   border-bottom: 1px solid #ccc;
-// }
-
-// .cartItem h4 {
-//   margin: 0;
-//   font-size: 1.2rem;
-// }
-
-// .cartItem p {
-//   margin: 5px 0;
-// }
-
-// /* Формы */
-// .formContainer {
-//   margin-top: 30px;
-// }
-
-// .formContainer div {
-//   margin-bottom: 15px;
-// }
-
-// .formContainer label {
-//   font-size: 1rem;
-//   display: block;
-//   margin-bottom: 5px;
-// }
-
-// .formContainer input {
-//   width: 100%;
-//   padding: 10px;
-//   font-size: 1rem;
-//   border: 1px solid #ccc;
-//   border-radius: 4px;
-// }
-
-// .formContainer input:focus {
-//   border-color: #007bff;
-//   outline: none;
-// }
-
-// .formContainer button {
-//   width: 100%;
-// }
+.emptyCart {
+  text-align: center;
+  font-size: 18px;
+  color: #d9534f;
+  margin-top: 20px;
+}

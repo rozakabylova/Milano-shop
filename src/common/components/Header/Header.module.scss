@@ -1,55 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;700&display=swap');
+
+.header {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.logout {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+  padding: 0;
+  color: rgb(126, 123, 123);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.2s;
+  font-family: 'Playfair Display', serif;
+
+  &:hover {
+    color: #ff758f;
+    transform: scale(1.05);
+  }
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 24px 0;
-  li{
-    list-style: none;
-    }
-  a{
-    text-decoration: none;
-    color: black;
-    
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #f6f6f8, rgb(211, 200, 206));
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Playfair Display', serif;
+  flex-wrap: wrap; 
+}
 
-  }
-  &_logo_text{
-    font-size: 36px;
-    font-style: italic;
+.logoText {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Parisienne', cursive;
+  color: #504f4f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  }
-  input{
-    padding: 5px;
-    border: none;
-    height: 100%;
+.logoText:hover {
+  color: #ff758f;
+}
 
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  border: none;
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.searchButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #757374;
+  font-size: 22px;
+  transition: transform 0.2s;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar a {
+  color: rgb(126, 123, 123);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+  color: #ff758f;
+  transform: scale(1.05);
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.cartCount {
+  background: #ff4d6d;
+  border-radius: 50%;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-left: 5px;
+  color: white;
+}
+
+.aboutContainer {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background: white;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.aboutContainer h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+  font-family: 'Parisienne', cursive;
+}
+
+.aboutContainer p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
   }
-  button{
-    background-color: transparent;
-    border: none;
+
+  .logoText {
+    font-size: 50px;
   }
-  .searchIcon{
-font-size: 16px;
+
+  .searchContainer {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
   }
-  
-  &_userTools {
+
+  .searchInput {
+    width: 75%;
+    font-size: 14px;
+  }
+
+  .navbar ul {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+  }
 
-    &_search {
-      display: flex;
-      border: 1px solid #000;
-      border-radius: 12px;
-      padding: 8px 12px;   
-    }
+  .navbar a {
+    font-size: 16px;
+  }
 
-    &_nav {
-      display: flex;
-      gap: 12px;
-    }
-    
+  .cart {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .cartCount {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 15px 10px;
+  }
+
+  .logoText {
+    font-size: 40px;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .searchInput {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .cart {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .cartCount {
+    font-size: 12px;
   }
 }
