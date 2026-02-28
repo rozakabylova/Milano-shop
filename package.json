@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,9 @@
     "lint:eslint": "eslint . --fix",
     "lint:prettier": "prettier --write .",
     "preview": "vite preview",
-    "server": "json-server --watch ./db.json --port 8080"
+    "server": "json-server --watch ./db.json --port 3001",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
