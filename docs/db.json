@@ -24,12 +24,7 @@
           "rating": {
             "rate": 4.1,
             "count": 259,
-            "colors": [
-              "black",
-              "red",
-              "blue",
-              "green"
-            ]
+            "colors": ["black", "red", "blue", "green"]
           },
           "quantity": 1
         }
@@ -66,12 +61,7 @@
           "rating": {
             "rate": 4.7,
             "count": 500,
-            "colors": [
-              "black",
-              "red",
-              "blue",
-              "green"
-            ]
+            "colors": ["black", "red", "blue", "green"]
           },
           "quantity": 1
         }
@@ -117,12 +107,7 @@
       "rating": {
         "rate": 3.9,
         "count": 120,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -131,16 +116,11 @@
       "price": 299.99,
       "description": "Современная и стильная сумка с удобными карманами для всех необходимых вещей. Подойдет как для работы, так и для вечерних прогулок.",
       "category": "bags",
-      "image": "https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_2_LOOK_050_E05-1?$lookDefault_GH-GHC$&crop=568,0,1862,2000&wid=1024&hei=1107&scale=0.5535&bfc=on&qlt=85",
+      "image": "https://www.thesymbol.ru/upload/img_cache/0e1/0e1fd7c9928b048fa861aae4104b00f3_cropped_1332x1998.webp",
       "rating": {
         "rate": 4.1,
         "count": 259,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -153,12 +133,7 @@
       "rating": {
         "rate": 4.7,
         "count": 500,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -171,12 +146,7 @@
       "rating": {
         "rate": 2.1,
         "count": 430,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -189,12 +159,7 @@
       "rating": {
         "rate": 4.6,
         "count": 400,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -207,12 +172,7 @@
       "rating": {
         "rate": 3.9,
         "count": 70,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -225,12 +185,7 @@
       "rating": {
         "rate": 3,
         "count": 400,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -243,12 +198,7 @@
       "rating": {
         "rate": 1.9,
         "count": 100,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -261,12 +211,7 @@
       "rating": {
         "rate": 3.3,
         "count": 203,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -279,12 +224,7 @@
       "rating": {
         "rate": 2.9,
         "count": 470,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -297,12 +237,7 @@
       "rating": {
         "rate": 4.8,
         "count": 319,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -315,12 +250,7 @@
       "rating": {
         "rate": 4.8,
         "count": 400,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -333,12 +263,7 @@
       "rating": {
         "rate": 2.9,
         "count": 250,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -351,12 +276,7 @@
       "rating": {
         "rate": 2.2,
         "count": 140,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -369,12 +289,7 @@
       "rating": {
         "rate": 2.6,
         "count": 235,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -387,12 +302,7 @@
       "rating": {
         "rate": 2.9,
         "count": 340,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -405,12 +315,7 @@
       "rating": {
         "rate": 3.8,
         "count": 679,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -423,12 +328,7 @@
       "rating": {
         "rate": 4.7,
         "count": 130,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -441,12 +341,7 @@
       "rating": {
         "rate": 4.5,
         "count": 146,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     },
     {
@@ -459,12 +354,7 @@
       "rating": {
         "rate": 3.6,
         "count": 145,
-        "colors": [
-          "black",
-          "red",
-          "blue",
-          "green"
-        ]
+        "colors": ["black", "red", "blue", "green"]
       }
     }
   ]
